@@ -2,9 +2,8 @@ from listas_personas import *
 import random
 
 
-# =========================
+
 # EJERCICIO 1
-# =========================
 
 def cargar_nombres():
 
@@ -23,9 +22,8 @@ def cargar_nombres():
     return lista
 
 
-# =========================
+
 # EJERCICIO 2
-# =========================
 
 def cargar_numeros():
 
@@ -40,9 +38,8 @@ def cargar_numeros():
     return lista
 
 
-# =========================
+
 # EJERCICIO 3
-# =========================
 
 def cargar_rango(minimo, maximo):
 
@@ -61,18 +58,16 @@ def cargar_rango(minimo, maximo):
     return lista
 
 
-# =========================
+
 # EJERCICIO 4
-# =========================
 
 def buscar_numero(lista, numero):
 
     return numero in lista
 
 
-# =========================
+
 # EJERCICIO 5
-# =========================
 
 def buscar_menores(lista_nombres, lista_edades):
 
@@ -85,9 +80,8 @@ def buscar_menores(lista_nombres, lista_edades):
             print(lista_nombres[i], lista_edades[i])
 
 
-# =========================
+
 # MENU OPCION 2
-# =========================
 
 def usuarios_mexico():
 
@@ -98,9 +92,7 @@ def usuarios_mexico():
             print(nombres[i], edades[i], country[i])
 
 
-# =========================
 # MENU OPCION 3
-# =========================
 
 def usuarios_brasil():
 
@@ -111,9 +103,8 @@ def usuarios_brasil():
             print(nombres[i], mails[i], telefonos[i])
 
 
-# =========================
+
 # MENU OPCION 4
-# =========================
 
 def usuarios_mas_jovenes():
 
@@ -126,9 +117,8 @@ def usuarios_mas_jovenes():
             print(nombres[i], edades[i])
 
 
-# =========================
+
 # MENU OPCION 5
-# =========================
 
 def promedio_edades():
 
@@ -137,9 +127,8 @@ def promedio_edades():
     print("Promedio:", promedio)
 
 
-# =========================
+
 # MENU OPCION 6
-# =========================
 
 def brasil_mayor_edad():
 
@@ -158,9 +147,8 @@ def brasil_mayor_edad():
     print(nombres[indice], edades[indice])
 
 
-# =========================
+
 # MENU OPCION 7
-# =========================
 
 def mexico_brasil_cp():
 
@@ -171,9 +159,8 @@ def mexico_brasil_cp():
             print(nombres[i], country[i], postalZip[i])
 
 
-# =========================
+
 # MENU OPCION 8
-# =========================
 
 def italianos_mayores_40():
 
