@@ -7,7 +7,7 @@ import os
 def ordenar_por_nombre_asc(nombres: list, edades: list) -> tuple[list, list]:
     """
     Ordena las listas Nombres y Edades por nombre de manera ascendente.
-    Retorna las dos listas ordenadas manteniendo la correspondencia.
+    Retorna las dos listas ordenadas 
     """
     pares = list(zip(nombres, edades))
     pares_ordenados = sorted(pares, key=lambda x: x[0].lower())
@@ -56,10 +56,11 @@ COLUMNAS = ["nombre", "mail", "telefono", "edad", "pais", "codigo_postal"]
 
 
 def importar_listas(ruta_csv: str) -> list[dict]:
-    """
-    Lee un archivo CSV y devuelve una lista de dicts con los datos de usuarios.
-    Campos esperados: nombre, mail, telefono, edad, pais, codigo_postal.
-    """
+    # Si la ruta no es absoluta, la busca en la carpeta del script
+    if not os.path.isabs(ruta_csv):
+        carpeta = os.path.dirname(os.path.abspath(__file__))
+        ruta_csv = os.path.join(carpeta, ruta_csv)
+
     if not os.path.exists(ruta_csv):
         raise FileNotFoundError(f"No se encontró el archivo: {ruta_csv}")
 

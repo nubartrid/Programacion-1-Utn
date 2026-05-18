@@ -148,7 +148,7 @@ def menu_ejercicio4() -> None:
     while True:
         mostrar_menu()
         if not importado:
-            print("  ⚠  Debe importar las listas primero (Opción 1).")
+            print("  Debe importar las listas primero (Opción 1).")
         opcion = input("\n  Ingrese una opción: ").strip()
 
         if opcion == "0":
