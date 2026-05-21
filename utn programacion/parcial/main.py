@@ -360,10 +360,3 @@ def main():
             print("\n     Opción inválida. Ingresá un número del 0 al 8.")
 
         input("\n   Presioná Enter para continuar...")
-
-
-# ─────────────────────────────────────────────────────────────
-#  PUNTO DE ENTRADA
-# ─────────────────────────────────────────────────────────────
-if __name__ == "__main__":
-    main()
