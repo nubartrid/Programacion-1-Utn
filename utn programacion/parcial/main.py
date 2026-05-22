@@ -215,7 +215,7 @@ def ordenar_heroes():
     print("\n   Vista rápida del nuevo orden:")
     print(SEP_DELGADO)
     for i, heroe in enumerate(lista_heroes, 1):
-        print(f"   {i:>2}. {heroe[I_NOMBRE]}  ({heroe[I_EMPRESA]})")
+        print(f"   {i}. {heroe[I_NOMBRE]}  ({heroe[I_EMPRESA]})")
     print(SEP_DELGADO)
 
 
